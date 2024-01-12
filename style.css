@@ -1,0 +1,53 @@
+#wrapper {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#verso, #recto {
+    display: flex;
+    justify-content: center;
+    margin: 4px;
+}
+
+#recto {
+    position: absolute;
+}
+
+.rectocarte {
+    background-image: url(cover.png);
+    background-size: cover;
+    box-shadow: 0.5em 0.5em 1em black;
+}
+
+.carte, .rectocarte {
+    width: 150px;
+    height: 150px;
+    margin: 6px;
+    border-radius: 25px;
+}
+
+.rectocarte:hover {
+    transform: skew(0deg, -5deg) translateY(-0.5em) rotate(-0.5deg);
+}
+
+.carte:hover  {
+    display: none;
+}
+
+
+img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+
+.retourne {
+    background-image: none;
+}
+
+.retourne:hover {
+    transform: none;
+}
